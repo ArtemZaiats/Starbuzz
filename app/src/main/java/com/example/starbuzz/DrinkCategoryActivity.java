@@ -29,7 +29,7 @@ public class DrinkCategoryActivity extends Activity {
                                     View itemView,
                                     int position,
                                     long id) {
-                //передача напитка, выбранного пользоватедем, DrinkActivity
+                //передача напитка, выбранного пользователем, DrinkActivity
                 Intent intent = new Intent(DrinkCategoryActivity.this, DrinkActivity.class);
                 intent.putExtra(DrinkActivity.EXTRA_DRINKID, (int) id);
                 startActivity(intent);

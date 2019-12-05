@@ -91,8 +91,8 @@ public class TopLevelActivity extends Activity {
         CursorAdapter adapter = (CursorAdapter)listFavorites.getAdapter();
         //курсор из list_favorites заменяется новым курсором
         adapter.changeCursor(newCursor);
-        /*Значение favoritesCursor заменяется новым курсором, чтобы
-        его можно было закрыть в методе onDestroy() активности*/
+        //Значение favoritesCursor заменяется новым курсором, чтобы
+        //его можно было закрыть в методе onDestroy() активности
         favoritesCursor = newCursor;
     }
 
